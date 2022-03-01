@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* Author: JW 2022-03-01 */
+@font-face {
+	font-family: 'NanumSquareExtraBold';
+	src: url('https://cdn.jsdelivr.net/gh/fe-jw/home/font/NanumSquareEB.woff') format('woff');
+	unicode-range:U+AC00-D7AF;/* 한글 */
+}
+@font-face {
+	font-family: 'NanumSquareR';
+	src: url('https://cdn.jsdelivr.net/gh/fe-jw/home/font/NanumSquareR.woff') format('woff');
+	unicode-range:U+AC00-D7AF;/* 한글 */
+}
+@font-face {
+	font-family: 'NanumSquareL';
+	src: url('https://cdn.jsdelivr.net/gh/fe-jw/home/font/NanumSquareL.woff') format('woff');
+	unicode-range:U+AC00-D7AF;/* 한글 */
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('https://cdn.jsdelivr.net/gh/fe-jw/home/font/Roboto-Bold.ttf') format('truetype');
+	unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;/* 영문 대문자, 소문자 & 숫자 */
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/fe-jw/home/font/Roboto-Regular.ttf') format('truetype');
+	unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;/* 영문 대문자, 소문자 & 숫자 */
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('https://cdn.jsdelivr.net/gh/fe-jw/home/font/Roboto-Light.ttf') format('truetype');
+	unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;/* 영문 대문자, 소문자 & 숫자 */
+}
