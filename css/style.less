@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-/*! Author: JW 2022-03-01 */
+/*! Author: JW 2022-03-05 */
 @font: 'Roboto-Regular', 'NanumSquareR', sans-serif;
 @font-light: 'Roboto-Light', 'NanumSquareL', sans-serif;
 @font-bold: 'Roboto-Bold', 'NanumSquareExtraBold', sans-serif;
@@ -17,8 +17,6 @@
 *	{margin:0;padding:0;}
 html	{font-size:10px;-webkit-text-size-adjust:none;}
 body	{line-height:1.2;font-size:2.0rem;font-family:@font;color:#fff;background-color:#000;-webkit-overflow-scrolling:touch;}
-body:after	{content:'Loading...';display:flex;justify-content:center;align-items:center;width:100%;height:100%;position:fixed;left:0;top:0;font-family:sans-serif;font-style:italic;font-weight:bold;font-size:5.0rem;color:@symbol-color;z-index:1000;background-color:#000;transition:all 0.5s ease;}
-body.onLoad:after	{opacity:0;visibility:hidden;}
 h1, h2, h3, h4, h5, h6, strong	{font-family:@font-bold;font-weight:normal;}
 a	{color:inherit;text-decoration:none;}
 button	{line-height:inherit;font-family:inherit;font-size:inherit;color:inherit;border:none;background-color:transparent;cursor:pointer;}
@@ -28,6 +26,21 @@ li, dd	{list-style:none;}
 ::-webkit-scrollbar-thumb	{background-color:rgba(255, 255, 255, 1);}
 .skip-content	{position:absolute;left:0;top:-100px;}
 .skip-content:focus	{display:block;width:100%;top:0;line-height:50px;font-weight:bold;color:#fff;text-align:center;background-color:@symbol-color;z-index:1000;}
+
+//Loading
+body	{
+	&:before	{content:'';width:80px;height:80px;margin-top:-40px;margin-left:-40px;position:fixed;left:50%;top:50%;background:url("@{loading}") no-repeat;background-size:100% 100%;z-index:100;animation:loading 3s linear infinite;}
+	.header,
+	.container,
+	.footer	{visibility:hidden;}
+	
+	&.onLoad	{
+		&:before	{visibility:hidden;animation:none;}
+		.header,
+		.container,
+		.footer	{visibility:initial;}
+	}
+}
 
 //Common
 .home-wrap	{
@@ -229,4 +242,9 @@ li, dd	{list-style:none;}
 		.btn-top	{width:50px;height:50px;right:20px;bottom:20px;}
 		.btn-top:after	{width:25px;height:25px;}
 	}
+}
+
+@keyframes loading	{
+	from	{transform:rotate(0);}
+	to	{transform:rotate(360deg);}
 }
