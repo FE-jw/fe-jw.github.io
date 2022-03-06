@@ -1,20 +1,26 @@
 @charset "utf-8";
 
-/* Author: JW 2022-03-05 */
+/* Author: JW 2022-03-06 */
 @font-face {
 	font-family: 'NanumSquareExtraBold';
 	src: url('https://cdn.jsdelivr.net/gh/fe-jw/fe-jw.github.io/font/NanumSquareEB.woff') format('woff');
-	unicode-range:U+AC00-D7AF, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;/* 한글, 숫자, 특수문자 */
+	unicode-range:U+AC00-D7AF, /*한글*/
+					U+0030-0039, /*숫자*/
+					U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;/* 특수문자 */
 }
 @font-face {
 	font-family: 'NanumSquareR';
 	src: url('https://cdn.jsdelivr.net/gh/fe-jw/fe-jw.github.io/font/NanumSquareR.woff') format('woff');
-	unicode-range:U+AC00-D7AF, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;/* 한글, 숫자, 특수문자 */
+	unicode-range:U+AC00-D7AF, /*한글*/
+					U+0030-0039, /*숫자*/
+					U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;/* 특수문자 */
 }
 @font-face {
 	font-family: 'NanumSquareL';
 	src: url('https://cdn.jsdelivr.net/gh/fe-jw/fe-jw.github.io/font/NanumSquareL.woff') format('woff');
-	unicode-range:U+AC00-D7AF, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;/* 한글, 숫자, 특수문자 */
+	unicode-range:U+AC00-D7AF, /*한글*/
+					U+0030-0039, /*숫자*/
+					U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;/* 특수문자 */
 }
 @font-face {
 	font-family: 'Roboto-Bold';

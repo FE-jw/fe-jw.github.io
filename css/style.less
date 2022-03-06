@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-/*! Author: JW 2022-03-05 */
+/*! Author: JW 2022-03-06 */
 @font: 'Roboto-Regular', 'NanumSquareR', sans-serif;
 @font-light: 'Roboto-Light', 'NanumSquareL', sans-serif;
 @font-bold: 'Roboto-Bold', 'NanumSquareExtraBold', sans-serif;
@@ -22,7 +22,7 @@ a	{color:inherit;text-decoration:none;}
 button	{line-height:inherit;font-family:inherit;font-size:inherit;color:inherit;border:none;background-color:transparent;cursor:pointer;}
 li, dd	{list-style:none;}
 .flex_item	{display:block;width:100%;}
-::-webkit-scrollbar	{width:4px;background-color:rgba(255, 255, 255, 0.05);}
+::-webkit-scrollbar	{width:4px;height:2px;background-color:rgba(255, 255, 255, 0.05);}
 ::-webkit-scrollbar-thumb	{background-color:rgba(255, 255, 255, 1);}
 .skip-content	{position:absolute;left:0;top:-100px;}
 .skip-content:focus	{display:block;width:100%;top:0;line-height:50px;font-weight:bold;color:#fff;text-align:center;background-color:@symbol-color;z-index:1000;}
@@ -113,8 +113,7 @@ body	{
 		.symbol	{font-size:5.0rem;}
 	}
 
-	.content-1 .my-plugin	{overflow:auto;padding-bottom:20px;
-		&::-webkit-scrollbar	{height:5px;}
+	.content-1 .my-plugin	{overflow:auto;padding-bottom:10px;
 
 		@plugin-size: 220px;
 		li	{width:@plugin-size;height:@plugin-size;border-width:1px;}
