@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-/*! Author: JW 2022-03-06 */
+/*! Author: JW 2022-03-07 */
 @font: 'Roboto-Regular', 'NanumSquareR', sans-serif;
 @font-light: 'Roboto-Light', 'NanumSquareL', sans-serif;
 @font-bold: 'Roboto-Bold', 'NanumSquareExtraBold', sans-serif;
@@ -29,7 +29,7 @@ li, dd	{list-style:none;}
 
 //Loading
 body	{
-	&:before	{content:'';width:80px;height:80px;margin-top:-40px;margin-left:-40px;position:fixed;left:50%;top:50%;background:url("@{loading}") no-repeat;background-size:100% 100%;z-index:100;animation:loading 3s linear infinite;}
+	&:before	{content:'';width:60px;height:60px;margin-top:-30px;margin-left:-30px;position:fixed;left:50%;top:50%;background:url("@{loading}") no-repeat;background-size:100% 100%;z-index:100;animation:loading 3s linear infinite;}
 	.header,
 	.container,
 	.footer	{visibility:hidden;}
@@ -185,6 +185,10 @@ body	{
 
 //PC
 @media all and (min-width: 1440px){
+	body	{
+		&:after	{width:100px;height:100px;margin-top:-50px;margin-left:-50px;}
+	}
+
 	.home-wrap	{
 		&:before	{background-size:auto 1400px;}
 		
