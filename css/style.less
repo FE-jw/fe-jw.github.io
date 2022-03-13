@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-/*! Author: JW 2022-03-01. Edit: 2022-03-10 */
+/*! Author: JW 2022-03-01. Edit: 2022-03-13 */
 @font: 'Roboto-Regular', 'NanumSquareR', sans-serif;
 @font-light: 'Roboto-Light', 'NanumSquareL', sans-serif;
 @font-bold: 'Roboto-Bold', 'NanumSquareExtraBold', sans-serif;
@@ -29,13 +29,13 @@ li, dd	{list-style:none;}
 
 //Loading
 body	{
-	&:before	{content:'';width:60px;height:60px;margin-top:-30px;margin-left:-30px;position:fixed;left:50%;top:50%;background:url("@{loading}") no-repeat;background-size:100% 100%;z-index:100;animation:loading 3s linear infinite;}
+	&:after	{content:'';width:60px;height:60px;margin-top:-30px;margin-left:-30px;position:fixed;left:50%;top:50%;background:url("@{loading}") no-repeat;background-size:100% 100%;z-index:100;animation:loading 3s linear infinite;}
 	.header,
 	.container,
 	.footer	{visibility:hidden;}
 	
 	&.onLoad	{
-		&:before	{visibility:hidden;animation:none;}
+		&:after	{visibility:hidden;animation:none;}
 		.header,
 		.container,
 		.footer	{visibility:initial;}
