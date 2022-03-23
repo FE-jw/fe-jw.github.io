@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fe-jw.github.io/sitemap.xml
