@@ -4,7 +4,7 @@
 제가 직접 만든 플러그인으로, jQuery에 의존하지 않고 pure JavaScript, 즉 **Vanilla JS**로 구현하는 것을 지향합니다.
 * [STA(Scroll Trigger Animation)](https://github.com/FE-jw/STA#readme)
 * [SP(Smart Layer Popup)](https://github.com/FE-jw/SmartPop#readme)
-* [Sㅆ(Smart Tab)](https://github.com/FE-jw/SmartTab#readme)
+* [ST(Smart Tab)](https://github.com/FE-jw/SmartTab#readme)
 
 ## **J-Web 연구소**
 [J-Web 연구소](https://fe-jw.github.io/J-Web)에는 제가 끊임없이 기술을 연구하고 정리한 내용들이 담겨있습니다.  
