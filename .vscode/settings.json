@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true // root에 .prettierrc 파일 있는 경우에만 실행
+}
